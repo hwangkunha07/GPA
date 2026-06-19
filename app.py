@@ -2,15 +2,15 @@ import streamlit as st
 import logging
 logging.getLogger("streamlit.runtime.scriptrunner_utils.script_run_context").setLevel(logging.ERROR)
 # 페이지 설정
-st.set_page_config(page_title="학과 학점 계산기", page_icon="🎓")
+st.set_page_config(page_title="반도체학과 1학년 1학기 학점 계산기", page_icon="🎓")
 
-st.title("🎓 학과 전용 학점 계산기")
+st.title("🎓 반도체공학과 1학년 1학기 학점 계산기(공식 홈페이지 아닙니다.)")
 st.write("각 과목의 성적을 선택하면 자동으로 평점이 계산됩니다.")
 
 # 과목 데이터 정의
-subjects_3 = {"반산이": 3, "파이썬": 3, "수학": 3}
-subjects_2 = {"글쓰기": 2, "벤처": 2, "영비사": 2, "일반물리1": 2}
-subjects_1 = {"일반물리실험1": 1}
+subjects_3 = {"반도체 산업의 이해": 3, "파이썬 및 인공지능": 3, "수학의 이해1": 3}
+subjects_2 = {"글쓰기와 커뮤니케이션": 2, "벤처와 산업가 이해": 2, "영어와 비판적 사고": 2, "일반물리학1": 2}
+subjects_1 = {"일반물리실험": 1}
 
 grade_points = {"A+": 4.5, "A0": 4.0, "B+": 3.5, "B0": 3.0, "C+": 2.5, "C0": 2.0, "D+": 1.5, "D0": 1.0, "F": 0.0}
 
